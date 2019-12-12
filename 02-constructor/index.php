@@ -13,15 +13,15 @@ var_dump($coche2);
 var_dump($coche3);
 var_dump($coche4);
 
-/*
-echo $coche->getColor() . '<br>';
-$coche->setColor( 'Amarillo' );
+$coche->color = "Lila";
 echo $coche->getColor() . '<br>';
 
-echo $coche->getVelocidad() . '<br>';
-$coche->acelerar();
-$coche->acelerar();
-$coche->frenar();
-$coche->acelerar();
-echo $coche->getVelocidad() . '<br>';
-*/
+//$coche->marca = "Audi";
+$coche->setMarca( 'Audi' );
+echo $coche->getMarca() . '<br>';
+
+//$coche->modelo = "horsas";
+$coche->setModelo( 'horsas' );
+echo $coche->getModelo() . '<br>';
+
+
