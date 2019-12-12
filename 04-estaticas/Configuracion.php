@@ -1,5 +1,6 @@
 <?php
-
+// ESTATICAS: las propiedades y funciones estáticas no necesitan 
+// un objeto instanciado pq están directamente relacionadas con la Clase
  class Configuracion{
 
   public static $color;
