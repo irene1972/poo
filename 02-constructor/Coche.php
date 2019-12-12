@@ -65,5 +65,23 @@ class Coche{
     $this->velocidad--;
   }
 
+  public function mostrarInformacion( Coche $objeto ){
+
+    if( is_object( $objeto ) ){
+      $informacion = "<h1>Información del coche</h1>";
+      $informacion .= "<p>Color: " . $objeto->color . "</p>";
+      $informacion .= "<p>Marca: " . $objeto->marca . "</p>";
+      $informacion .= "<p>Modelo: " . $objeto->modelo . "</p>";
+      $informacion .= "<p>Velocidad: " . $objeto->velocidad . "</p>";
+    }else{
+      $informacion = "<h1>Aviso: No estás pasando por param un Objeto</h1>";  
+    }
+
+    return $informacion;
+
+
+  }
+
+
 
 }

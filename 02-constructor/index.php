@@ -24,4 +24,7 @@ echo $coche->getMarca() . '<br>';
 $coche->setModelo( 'horsas' );
 echo $coche->getModelo() . '<br>';
 
+echo $coche->mostrarInformacion( $coche2 );
+//echo $coche->mostrarInformacion( 'coche2' );
+
 
