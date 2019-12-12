@@ -57,6 +57,12 @@
 class Informatico extends Persona{
 
   public $lenguages;
+  public $experienciaProgramador;
+
+  public function __construct(){
+    $this->lenguages = 'HTM, CSS y JS';
+    $this->experienciaProgramador = 10;
+  }
 
   public function sabeLenguages( $lenguages ){
     $this->lenguages = $lenguages;
@@ -77,3 +83,20 @@ class Informatico extends Persona{
 
 }
 
+class TecnicoRedes extends Informatico{
+
+  public $auditarRedes;
+  public $experienciaRedes;
+
+  public function __construct(){
+    parent::__construct();
+    $this->auditarRedes = 'Experto';
+    $this->experienciaRedes = 5;
+  }
+
+  public function auditoria(){
+    return 'Estoy auditando una red';
+  }
+
+
+}
