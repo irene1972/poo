@@ -26,9 +26,5 @@ try{
 
 
 
-//$persona = new Persona( 'María', 30, 'Palencia' );
-
-
-
 
 
